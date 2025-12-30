@@ -6,6 +6,7 @@
     padding: 1em 1.2em;
 }
 
+//UL is part of template so we don;t need to do anything with it
 ul {
     display: flex; 
     list-style: none; 
@@ -13,11 +14,22 @@ ul {
     padding: 0;
 }
 
+//We need to style links so we add ::ng-deep to pierce the shadow dom
+// a {
+//     color: #fff;
+//     padding: 0 1em; 
+//     text-decoration: none;
+// }
+
 :host ul ::ng-deep a {
     color: #fff;
     padding: 0 1em; 
     text-decoration: none;
 }
+
+// a:hover {
+//     text-decoration: underline;
+// }
 
 :host ul ::ng-deep a:hover {
     text-decoration: underline;
