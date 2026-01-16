@@ -12,7 +12,12 @@
 <div class="content">
 
     <saa-message>
+        <!-- Provide content to component for title -->
         <saa-message-title>Your Account is Expiring!</saa-message-title>
+        <!-- Provide content to conponent for message. Since this message part of the component content -->
+        <!-- and not part of the view (its outside the components template) we need to add some sot of info -->
+        <!-- that we can then reference from our component to check against the existence of this content  -->
+        <!-- We can create this relationship using a contentChild signal query within our component class -->
         <saa-message-content>Your account will expire within the next thirty days. Please update your payment method in your account.</saa-message-content>
     </saa-message>
 

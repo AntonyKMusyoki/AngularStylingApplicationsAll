@@ -19,7 +19,8 @@ export class MessageContentDirective {}
     styleUrls: ['./message.component.scss'],
     standalone: false
 })
-
 export class MessageComponent {
+    //Add ContentChild signal query where we will query for the 
+    //MessageContentDirective
     readonly messageContent = contentChild(MessageContentDirective);
 }
