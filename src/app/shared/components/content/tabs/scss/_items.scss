@@ -75,6 +75,15 @@
 
 
 // Variations
+// Add new section for different themed look
+// Add :host-context pseudo class. We want to see if were are
+// in the context of our model-component (saa-modal)
+// But we only want to stlye this component differently when its 
+// in the color verion of tre modal and not the paoin white version
+// becuase in that scenario it will be in its default theme
+// Append class name for our color-02 verion to the CSS seletor (saa-modal)
+// These stytles will only appluy when we are within the modal component
+// and it hgas color-02 class.
 // _________________________________________________________________________________________
 :host-context(saa-modal.color--02) {
 
